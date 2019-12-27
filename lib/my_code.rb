@@ -6,17 +6,17 @@ def map(array)
 	
 end
 
-def map(array)
-	array.map { |n| n  }
-end
+# def map(array)
+# 	array.map { |n| n  }
+# end
 
 
-def map(array)
+# def map(array)
 
-	array.map { |n| n * 2 } 
+# 	array.map { |n| n * 2 } 
 
-end
+# end
 
-def map(array)
-	array.map { |n| n * n }
-end
+# def map(array)
+# 	array.map { |n| n * n }
+# end
