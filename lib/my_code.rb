@@ -1,10 +1,11 @@
 def map(array)
 
-	yield array.map { |n| n * -1 }
-	yield array.map { |n| n  }
-	yield array.map { |n| n * 2 } 
-	yield array.map { |n| n * n }
+	new = []
+	i = 0 
 
-
-end
-
+	while i < array.length
+		new.push(yield(array[i]))
+		i += 1
+	end
+	new
+end	
