@@ -1,3 +1,4 @@
+#generalised map function
 def map(array)
 
 	new = []
@@ -9,3 +10,17 @@ def map(array)
 	end
 	new
 end	
+
+def reduce(array, starting_value = nil)
+	if starting_value
+		sum = starting_value
+		i = 0 
+	else
+		sum = array[0]
+	end
+	while i < array.length
+		sum = yield(sum,array[i])
+		i += 1
+	end
+	sum
+end
