@@ -1,24 +1,19 @@
-def map(array)
+def map1(array)
 
-	negative = 
-	original = negative.map { |n| n * -1}
-	multiplied_by_2 = original.map { |n| n * 2}
-	array.map { |n| n * n  }
-	
-	return negative + original + multiplied_by_2
+	array.map { |n| n * -1 }
 end
 
-# def map(array)
-# 	array.map { |n| n  }
-# end
+def map2(array)
+	array.map { |n| n  }
+end
 
 
-# def map(array)
+def map3(array)
 
-# 	array.map { |n| n * 2 } 
+	array.map { |n| n * 2 } 
 
-# end
+end
 
-# def map(array)
-# 	array.map { |n| n * n }
-# end
+def map4(array)
+	array.map { |n| n * n }
+end
