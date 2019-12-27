@@ -1,19 +1,10 @@
-def map1(array)
+def map(array)
 
-	array.map { |n| n * -1 }
-end
+	yield array.map { |n| n * -1 }
+	yield array.map { |n| n  }
+	yield array.map { |n| n * 2 } 
+	yield array.map { |n| n * n }
 
-def map2(array)
-	array.map { |n| n  }
-end
-
-
-def map3(array)
-
-	array.map { |n| n * 2 } 
 
 end
 
-def map4(array)
-	array.map { |n| n * n }
-end
