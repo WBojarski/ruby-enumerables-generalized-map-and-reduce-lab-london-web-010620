@@ -5,7 +5,7 @@ def map(array)
 	multiplied_by_2 = original.map { |n| n * 2}
 	array.map { |n| n * n  }
 	
-	
+	return negative original multiplied_by_2
 end
 
 # def map(array)
